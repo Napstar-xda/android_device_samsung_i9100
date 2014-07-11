@@ -16,16 +16,16 @@
 # Inherit from the common Open Source product configuration
 $(call inherit-product, $(SRC_TARGET_DIR)/product/full_base_telephony.mk)
 
-# Inherit from our omni product configuration
-$(call inherit-product, vendor/omni/config/common.mk)
+# Inherit from our merk product configuration
+$(call inherit-product, vendor/merk/config/common.mk)
 
 # Pull in GSM-specific stuff such as APNs
-$(call inherit-product, vendor/omni/config/gsm.mk)
+$(call inherit-product, vendor/merk/config/gsm.mk)
 
 $(call inherit-product, device/samsung/i9100/device.mk)
 
 # Discard inherited values and use our own instead.
-PRODUCT_NAME := omni_i9100
+PRODUCT_NAME := merk_i9100
 PRODUCT_DEVICE := i9100
 PRODUCT_BRAND := samsung
 PRODUCT_MANUFACTURER := Samsung
